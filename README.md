@@ -1,2 +1,0 @@
-# codeCamp
-freeCodeCamp learning
