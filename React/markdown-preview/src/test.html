@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        display: block;
+    }
+
+    input[type=checkbox] {
+        box-sizing: border-box;
+        padding: 0;
+        text-align: start;
+        overflow: visible;
+    }
+
+    .theme {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 300px;
+    }
+
+    .dark,
+    .light {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dark {
+        background-color: rgb(64, 64, 68);
+    }
+
+    .light {
+        background-color: rgb(245, 236, 236);
+    }
+
+    input {
+        position: absolute;
+
+    }
+
+    label {
+        position: relative;
+        width: 2rem;
+        height: 1rem;
+
+    }
+
+    label:before {
+        content: '';
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        border-radius: 12px;
+        background: rgb(174, 199, 190);
+        transition: background 0.1s 0.1s ease;
+    }
+
+
+
+    input[type="checkbox"]:checked+label:before {
+        background: #542d2d;
+    }
+
+
+    label::after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0.2rem;
+        left: 0.3rem;
+        border-radius: 1px;
+        width: 0.6rem;
+        height: 0.6rem;
+        background: rgb(24, 31, 29);
+
+        transition: all 0.2s ease;
+
+    }
+
+    input[type="checkbox"]:checked+label::after {
+        left: 1.1em;
+
+    }
+
+    .ckbx{
+        position: relative;
+    }
+</style>
+
+<body>
+
+
+    <div class="theme">
+        <div class="dark">
+            <div class="ckbx">
+                <input type="checkbox" id="darkbox">
+                <label for="darkbox"></label>
+            </div>
+        </div>
+
+        <div class="light">
+            <div class="ckbx">
+                <input type="checkbox" id="lightbox">
+
+                <label for="lightbox"></label>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

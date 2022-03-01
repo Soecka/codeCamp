@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Geostar+Fill");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Geostar Fill', cursive;
+  font-size: 2rem;
+  background-color: rgb(236, 159, 159);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:400px;
+  height: 500px;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: bisque;
+  border-radius: 10px;
+
+ 
+}
+.display {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 3rem;
+ 
+  width: 90%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: darkolivegreen;
+ overflow: hidden;
+}
+.ans {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 3rem;
+  width:90%;
+  margin-bottom: 1rem;
+  
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: darkolivegreen;
+  overflow: hidden;
+}
+.btnbox{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-gap:10px;
+grid-template-areas: 
+"ac  ab ad ae "
+"ba bb bc bd"
+"ca cb cc bd"
+"da db dc dd"
+"ea ea eb dd "
+;
+background-color: rgb(211, 204, 176);
+border-radius: 0px;
+align-self: center;
+justify-self: center;
+text-align: end;
+margin-top: 1.5rem;
+padding: 10px;
+width: 90%;
+}
+button{
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.add{
+    grid-area: bd;
+}
+.zero{
+    grid-area: ea;
+}
+.equals{
+grid-area: dd;
+}
+.hr{
+    border-top: 2px solid rgb(17, 17, 17);
+    
+}

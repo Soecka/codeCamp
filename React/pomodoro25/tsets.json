@@ -1,0 +1,28 @@
+{
+    "name": "fcc-learn-npm-package-json",
+    "author": "manta",
+    "dependencies": {
+        "moment": "~2.10.2",
+        "express": "^4.14.0"
+    },
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "8.11.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://idontknow/todo.git"
+    },
+    "description": "A project to learn NPM",
+    "keywords": [
+        "fcc",
+        "npm",
+        "node",
+        "freecodecamp"
+    ],
+    "license": "MIT",
+    "version": "0.1.4"
+}
